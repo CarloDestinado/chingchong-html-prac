@@ -1,0 +1,31 @@
+body{
+
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+H1{
+    
+    color: blue;    
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#content{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#btn{
+    padding: 10px;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightblue;
+    border: 1px solid black;
+}
