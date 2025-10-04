@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlo</title>
-    <link rel="stylesheet" href="styles.css">    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlo Destinado & Jayem Rosalita</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <H1 id="h1"></H1>
-    
-    <div id="content">
-        <button id="btn">Click me!</button>
-        <p id="text"></p>
-    </div>
 
-    <script src="index.js"></script>
+  <div class="container">
+    <h2>Handling Forms</h2>
     
+    <form id="myForm">
+      <label for="username">Name:</label>
+      <input type="text" id="username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="output" class="output"></div>
+    <p>by: Carlo Destinado & Jayem Rosalita BSIT 3B</p>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>

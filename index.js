@@ -1,18 +1,20 @@
-let age = 30;
+const form = document.getElementById("myForm");
+const output = document.getElementById("output");
 
-/*console.log(typeof age);
-console.log(`youre age is ${age}`);*/
-console.log(typeof age);
-if (age >= 18) {
-    console.log("you can vote");
-    if (age >= 21) {
-        console.log("you can drink");
-    }else{
-        console.log("you cant drink");
-    }
-} else {
-    console.log("you cant vote");
-}
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
 
+  const name = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const age = document.getElementById("age").value;
 
-document.getElementById("h1").textContent = `youre age is ${age}`;
+  output.style.display = "block";
+  output.innerHTML = `
+    <h3>Submitted Data:</h3>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Age:</strong> ${age}</p>
+  `;
+
+  document.body.style.background = "#f9fff4";
+});
